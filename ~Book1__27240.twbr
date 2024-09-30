@@ -1,0 +1,1444 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='sales_data' inline='true' name='federated.13qtt9s0fvbh201axxl7z10lciwk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sales_data' name='textscan.113a86f1ot6h1y12kubl80he40fi'>
+            <connection class='textscan' directory='C:/Users/Leo/Final_Project' filename='sales_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.113a86f1ot6h1y12kubl80he40fi' name='sales_data.csv' table='[sales_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Retailer' ordinal='0' />
+            <column datatype='date' name='Invoice Date' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='string' name='Product' ordinal='4' />
+            <column datatype='integer' name='Price per Unit' ordinal='5' />
+            <column datatype='integer' name='Units Sold' ordinal='6' />
+            <column datatype='integer' name='Total Sales' ordinal='7' />
+            <column datatype='string' name='Sales Method' ordinal='8' />
+            <column datatype='string' name='Brand' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.113a86f1ot6h1y12kubl80he40fi' name='sales_data.csv' table='[sales_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Retailer' ordinal='0' />
+            <column datatype='date' name='Invoice Date' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='string' name='Product' ordinal='4' />
+            <column datatype='integer' name='Price per Unit' ordinal='5' />
+            <column datatype='integer' name='Units Sold' ordinal='6' />
+            <column datatype='integer' name='Total Sales' ordinal='7' />
+            <column datatype='string' name='Sales Method' ordinal='8' />
+            <column datatype='string' name='Brand' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Retailer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Retailer]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Retailer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Invoice Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Invoice Date]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Invoice Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Product</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price per Unit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price per Unit]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Price per Unit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units Sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Units Sold]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Units Sold</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Sales]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Total Sales</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sales Method]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Sales Method</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[sales_data.csv]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Sales Method]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Units Sold]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='sales_data.csv' datatype='table' name='[__tableau_internal_object_id__].[sales_data.csv_CD9CA6766CA14207821836A645C899B4]' role='measure' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Attribute' name='[attr:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Count' name='[cnt:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Sum' name='[cum:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[diff:sum:Total Sales:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='CellInPane' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[diff:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Sales Method]' derivation='None' name='[none:Sales Method:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total Sales]' derivation='None' name='[none:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcdf:sum:Total Sales:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='CellInPane' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcdf:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcrk:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='PctRank' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:7]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcva:sum:Total Sales:qk:2]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[pcva:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='CellInPane' type='PctValue'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance aggregation-param='10' column='[Total Sales]' derivation='Percentile' name='[prc10:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance aggregation-param='5' column='[Total Sales]' derivation='Percentile' name='[prc5:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Sum' name='[rank:sum:Total Sales:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[rank:sum:Total Sales:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Unique,Ascending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[rank:sum:Total Sales:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' rank-options='Unique,Ascending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[rank:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Units Sold]' derivation='Sum' name='[sum:Units Sold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total Sales]' derivation='Var' name='[var:Total Sales:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Leo/AppData/Local/Temp/TableauTemp/#TableauTemp_0uaxyr01q3ot7p16mzrav1qkqnha.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/28/2024 11:02:39 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Retailer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Retailer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Retailer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Invoice Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Invoice Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Invoice Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>962</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>3</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product</remote-alias>
+              <ordinal>4</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price per Unit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price per Unit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price per Unit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units Sold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Units Sold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Units Sold</remote-alias>
+              <ordinal>6</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>438</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Sales</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Sales</remote-alias>
+              <ordinal>7</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2100</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sales Method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Method</remote-alias>
+              <ordinal>8</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>9</ordinal>
+              <family>sales_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sales_data.csv_CD9CA6766CA14207821836A645C899B4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[attr:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[cnt:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[cum:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[diff:sum:Total Sales:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[diff:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Sales Method:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcdf:sum:Total Sales:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcdf:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcrk:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:7]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcva:sum:Total Sales:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcva:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[prc10:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[prc5:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[rank:sum:Total Sales:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[rank:sum:Total Sales:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[rank:sum:Total Sales:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[rank:sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[var:Total Sales:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Units Sold:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sales_data.csv' id='sales_data.csv_CD9CA6766CA14207821836A645C899B4'>
+            <properties context=''>
+              <relation connection='textscan.113a86f1ot6h1y12kubl80he40fi' name='sales_data.csv' table='[sales_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Retailer' ordinal='0' />
+                  <column datatype='date' name='Invoice Date' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                  <column datatype='string' name='Product' ordinal='4' />
+                  <column datatype='integer' name='Price per Unit' ordinal='5' />
+                  <column datatype='integer' name='Units Sold' ordinal='6' />
+                  <column datatype='integer' name='Total Sales' ordinal='7' />
+                  <column datatype='string' name='Sales Method' ordinal='8' />
+                  <column datatype='string' name='Brand' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_6571EC047EBF4164B5348CBB3253869D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Product' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Brand_Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Price per Unit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Units Sold]' role='measure' type='quantitative' />
+            <column-instance column='[Price per Unit]' derivation='Avg' name='[avg:Price per Unit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Units Sold]' derivation='Sum' name='[sum:Units Sold:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+              <lod column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[avg:Price per Unit:qk]' />
+              <lod column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Units Sold:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]</rows>
+        <cols>([federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk] / [federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk])</cols>
+      </table>
+      <simple-id uuid='{9C7417B2-50ED-446F-BA2C-E069A56C0921}' />
+    </worksheet>
+    <worksheet name='Brand_Product_Total_Pie'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:5]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:5]' value='' />
+            <format attr='height' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='269' />
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='249' />
+            <format attr='height' value='219' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' />
+              <wedge-size column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:5]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{9CD8077C-46CE-430D-838C-DD9B58D6D583}' />
+    </worksheet>
+    <worksheet name='Brand_Retailer_Region_Total_Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]'>
+            <groupfilter function='level-members' level='[none:Retailer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:6]' value='' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:6]' />
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Region:nk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5DB69B33-594B-41D8-8ECF-12008660C1D6}' />
+    </worksheet>
+    <worksheet name='Brand_Retailer_Total'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Invoice Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Invoice Date]' derivation='Year' name='[yr:Invoice Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]'>
+            <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]'>
+            <groupfilter function='level-members' level='[none:Product:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]'>
+            <groupfilter function='level-members' level='[none:Retailer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[yr:Invoice Date:ok]'>
+            <groupfilter function='level-members' level='[yr:Invoice Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]</column>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]</column>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[yr:Invoice Date:ok]</column>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' value='22' />
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='56' />
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' value='180' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk] / [federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk])</rows>
+        <cols>([federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk] / [federated.13qtt9s0fvbh201axxl7z10lciwk].[yr:Invoice Date:ok])</cols>
+      </table>
+      <simple-id uuid='{89A2FE91-A62A-4EEB-85D6-F86A021AD01B}' />
+    </worksheet>
+    <worksheet name='Brand_Retailer_Total_Pie'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[cum:sum:Total Sales:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:7]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='189' />
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='322' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='10' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' />
+              <wedge-size column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[cum:sum:Total Sales:qk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:7]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{FC74DA61-6BBF-4AD9-8BAA-112C16B2DBAE}' />
+    </worksheet>
+    <worksheet name='Region_Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Region:nk]'>
+            <groupfilter function='level-members' level='[none:Region:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Region:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Region:nk]' value='91' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]</rows>
+        <cols>([federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Region:nk] / [federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk])</cols>
+      </table>
+      <simple-id uuid='{E2291ED7-0108-432F-875B-7E3937036103}' />
+    </worksheet>
+    <worksheet name='Sales_Method'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sales Method]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales Method]' derivation='None' name='[none:Sales Method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[pcto:sum:Total Sales:qk:5]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]' value='401' />
+            <format attr='text-format' field='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:5]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Sales Method:nk]' />
+              <text column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[pcto:sum:Total Sales:qk:5]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]</rows>
+        <cols>[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{363807A1-4B91-4705-93DD-BF3BCD45D970}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sales_data' name='federated.13qtt9s0fvbh201axxl7z10lciwk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13qtt9s0fvbh201axxl7z10lciwk'>
+            <column datatype='date' name='[Invoice Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Retailer]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Product]' derivation='None' name='[none:Product:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Retailer]' derivation='None' name='[none:Retailer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Invoice Date]' derivation='Month-Trunc' name='[tmn:Invoice Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk] * [federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk])</rows>
+        <cols>[federated.13qtt9s0fvbh201axxl7z10lciwk].[tmn:Invoice Date:qk]</cols>
+      </table>
+      <simple-id uuid='{CE2087EF-F5A9-4133-8C63-3F53CB6DD03E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='802' maxwidth='1592' minheight='802' minwidth='1592' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='33' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+            <zone h='5237' id='34' type-v2='title' w='98994' x='503' y='998'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92767' id='29' param='horz' type-v2='layout-flow' w='98994' x='503' y='6235'>
+              <zone h='92767' id='26' param='vert' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                <zone h='92767' id='24' param='vert' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                  <zone h='92767' id='22' param='vert' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                    <zone h='92767' id='20' param='vert' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                      <zone h='92767' id='18' type-v2='layout-basic' w='89635' x='503' y='6235'>
+                        <zone h='92767' id='15' param='horz' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                          <zone h='92767' id='12' param='vert' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                            <zone h='92767' id='9' param='horz' type-v2='layout-flow' w='89635' x='503' y='6235'>
+                              <zone h='92767' id='3' type-v2='layout-basic' w='89635' x='503' y='6235'>
+                                <zone h='40519' id='1' name='Brand_Retailer_Total' show-title='false' w='89635' x='503' y='6235'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='52248' id='13' name='Brand_Product_Total_Pie' w='33792' x='503' y='46754'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='52248' id='31' name='Region_Sales' w='55843' x='34295' y='46754'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone fixed-size='149' h='92767' id='28' is-fixed='true' param='vert' type-v2='layout-flow' w='9359' x='90138' y='6235'>
+                <zone fixed-size='147' h='19327' id='30' is-fixed='true' name='Brand_Product_Total_Pie' pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' type-v2='color' w='9359' x='90138' y='6235'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='26' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+                <zone h='98004' id='24' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+                  <zone h='98004' id='22' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+                    <zone h='98004' id='20' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+                      <zone h='98004' id='18' type-v2='layout-basic' w='98994' x='503' y='998'>
+                        <zone h='98004' id='15' param='horz' type-v2='layout-flow' w='98994' x='503' y='998'>
+                          <zone h='98004' id='12' param='vert' type-v2='layout-flow' w='98994' x='503' y='998'>
+                            <zone h='98004' id='9' param='horz' type-v2='layout-flow' w='98994' x='503' y='998'>
+                              <zone h='98004' id='3' type-v2='layout-basic' w='98994' x='503' y='998'>
+                                <zone h='29821' id='1' name='Brand_Retailer_Total' show-title='false' w='98994' x='503' y='998'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                                <zone h='68183' id='13' name='Brand_Product_Total_Pie' show-title='false' w='98994' x='503' y='30819'>
+                                  <zone-style>
+                                    <format attr='border-color' value='#000000' />
+                                    <format attr='border-style' value='none' />
+                                    <format attr='border-width' value='0' />
+                                    <format attr='margin' value='4' />
+                                  </zone-style>
+                                </zone>
+                              </zone>
+                            </zone>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{547E3A56-CDBA-4D05-9CBD-78A836F8CD94}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Brand_Retailer_Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0D3D451-FB8B-4E99-806B-62092B959D33}' />
+    </window>
+    <window class='worksheet' name='Brand_Retailer_Total_Pie'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{70C474C3-383D-4313-A8F5-FF0E5024CD5C}' />
+    </window>
+    <window class='worksheet' name='Brand_Product_Total_Pie'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{DFF9D177-0F41-40EA-9649-455D09651191}' />
+    </window>
+    <window class='worksheet' name='Brand_Retailer_Region_Total_Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Retailer:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[sum:Total Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{1DC95E5B-D964-4BF2-B134-D00E95EE1D18}' />
+    </window>
+    <window class='worksheet' name='Brand_Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1C25BB1E-9A93-4FDC-AC97-971C7A01738E}' />
+    </window>
+    <window class='worksheet' name='Region_Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B63E4666-5619-46BB-AE03-AACECE22760A}' />
+    </window>
+    <window class='worksheet' name='Sales_Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Sales Method:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A1FC2BD-3D65-49C1-B135-19B6CA0303E5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Brand_Product_Total_Pie' />
+        <viewpoint name='Brand_Retailer_Total'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Region_Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true'>
+        <device name='iPad Pro 12.9-inch' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{CC721C91-F8B3-47D7-8A80-B62F4B640F22}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13qtt9s0fvbh201axxl7z10lciwk].[none:Product:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0BB9757-8665-4889-BF00-86454F076948}' />
+    </window>
+  </windows>
+</workbook>
